@@ -62,10 +62,10 @@ src/
 
 ```bash
 # Clone the repository
-git clone <your-repo-link>
+git clone <https://github.com/Anshuy11/factwise>
 
 # Navigate into project
-cd ag-grid-dashboard
+cd factwise
 
 # Install dependencies
 npm install
@@ -81,7 +81,7 @@ npm run dev
 | Device  | Behavior                           |
 | ------- | ---------------------------------- |
 | Desktop | Hover interactions, tooltips       |
-| Mobile  | Tap interactions, full readability |
+| Mobile  |  Full readability                  |
 
 ---
 
@@ -95,15 +95,10 @@ npm run dev
 
 ---
 
-## 📸 Preview
-
-> Add screenshots or demo link here
-
----
 
 ## 🌐 Live Demo
 
-> Add deployed link (Vercel / Netlify)
+> [factwise-assignment](https://factwise-roan.vercel.app/)
 
 ---
 
@@ -115,10 +110,5 @@ This project demonstrates:
 * Strong frontend fundamentals
 * Real-world UX considerations
 
----
-
-## 📬 Contact
-
-Feel free to connect with me on LinkedIn for feedback or opportunities.
 
 ---
