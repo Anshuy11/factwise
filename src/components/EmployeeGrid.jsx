@@ -35,7 +35,9 @@ const EmployeeGrid = ({ data }) => {
       },
       { field: "age" },
       { field: "location" },
+        { field: "hireDate" },
       { field: "performanceRating" },
+    
       { field: "projectsCompleted" },
       {
         field: "isActive",
