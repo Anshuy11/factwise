@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Root container (important: remove flex issues) */
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Fix AG Grid visibility */
+.ag-theme-quartz,
+.ag-theme-quartz-dark {
+  --ag-background-color: white;
+}
+
+.ag-row:nth-child(even) {
+  background-color: #e7eff7;
+ 
+}
+
+.ag-row:hover {
+  background-color: #badaef;
+}
+/* Header container */
+.ag-theme-quartz .ag-header {
+  background-color: #e1e2e4; /* dark blue */
+}
+
+/* Header cells (padding + alignment) */
+.ag-theme-quartz .ag-header-cell {
+  background-color: #e1e2e4 ;
+  padding: 10px 16px ;
+  display: flex;
+  align-items: center;
+}
+
+/* Header text (white + no truncate) */
+.ag-theme-quartz .ag-header-cell-label {
+  color: black ;
+  font-weight: 600;
+
+  white-space: normal ;   /* no truncate */
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.ag-paging-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ag-theme-quartz .ag-cell {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+}
+.ag-theme-quartz .ag-tooltip {
+  background-color: #ffffff ;
+  color: #111827 ;
+  padding: 10px 14px ;
+  border-radius: 8px ;
+  border: 1px solid #e5e7eb ;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) ;
+  font-size: 13px ;
+  max-width: 300px;
+  white-space: normal; /* allow wrapping */
+}
+
+
+
+/* Optional: dark mode support */
+@media (prefers-color-scheme: dark) {
+  .ag-theme-quartz-dark {
+    --ag-background-color: #1f2937;
+  }
+}
