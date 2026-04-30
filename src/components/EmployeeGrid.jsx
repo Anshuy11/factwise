@@ -117,9 +117,9 @@ const EmployeeGrid = ({ data }) => {
 
   //  Dynamic height
   const getGridHeight = () => {
-    if (pageSize <= 5) return "400px";
-    if (pageSize <= 10) return "600px";
-    return "1200px";
+    if (pageSize <= 5) return "550px";
+    if (pageSize <= 10) return "950px";
+    return "1400px";
   };
 
   return (
