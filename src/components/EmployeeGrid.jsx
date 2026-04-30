@@ -35,13 +35,23 @@ const EmployeeGrid = ({ data }) => {
       },
       { field: "age" },
       { field: "location" },
-        { field: "hireDate" },
+      { field: "hireDate" },
       { field: "performanceRating" },
-    
+
       { field: "projectsCompleted" },
       {
         field: "isActive",
-        cellRenderer: (params) => (params.value ? "🟢 Active" : "🔴 Inactive"),
+        cellRenderer: (params) => {
+          return params.value ? (
+            <span className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-semibold">
+              Active
+            </span>
+          ) : (
+            <span className="bg-red-100 text-red-600 px-2 py-1 rounded text-xs font-semibold">
+              Inactive
+            </span>
+          );
+        },
       },
       {
         field: "skills",
@@ -57,9 +67,7 @@ const EmployeeGrid = ({ data }) => {
           //  Mobile → show full text
           if (isMobile) {
             return (
-              <div
-                style={{ whiteSpace: "normal", lineHeight: "1.4" }}
-              >
+              <div style={{ whiteSpace: "normal", lineHeight: "1.4" }}>
                 {text}
               </div>
             );
