@@ -1,6 +1,6 @@
 # 🧑‍ Employee Dashboard (AG Grid)
 
-A responsive and interactive employee dashboard built using **React**, **AG Grid**, and **Tailwind CSS**.
+A responsive and interactive employee data dashboard built using **React**, **AG Grid**, and **Tailwind CSS**.
 This project focuses on handling tabular data efficiently with a clean UI and smooth user experience.
 
 ---
@@ -10,13 +10,13 @@ This project focuses on handling tabular data efficiently with a clean UI and sm
 *  **AG Grid Integration** for high-performance data rendering
 *  **Global Search (Debounced)** across all columns
 * 📑 **Pagination with Dynamic Page Size**
-*  **Responsive Design (Mobile + Desktop)**
+*  **Responsive Design (Mobile + Tablet + Desktop)**
 * 🎯 **Custom Cell Rendering**
 
   * Skills column:
 
     * Desktop → Hover to expand
-    * Mobile → Tap to expand
+   
 * 🎨 **Styled UI**
 
   * Custom header styling
@@ -62,7 +62,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone <https://github.com/Anshuy11/factwise>
+git clone https://github.com/Anshuy11/factwise
 
 # Navigate into project
 cd factwise
