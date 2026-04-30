@@ -46,6 +46,7 @@ const EmployeeGrid = ({ data }) => {
         valueGetter: (params) => params.data.skills.join(", "),
 
         tooltipValueGetter: (params) => params.data.skills.join(", "),
+        minWidth: 150,
 
         cellRenderer: (params) => {
           const text = params.value || "";
@@ -55,8 +56,7 @@ const EmployeeGrid = ({ data }) => {
           if (isMobile) {
             return (
               <div
-                style={{ maxWidth: "100%", height: "100%" }}
-                className="whitespace-normal break-words text-sm"
+                style={{ whiteSpace: "normal", lineHeight: "1.4" }}
               >
                 {text}
               </div>
@@ -148,7 +148,7 @@ const EmployeeGrid = ({ data }) => {
         <AgGridReact
           ref={gridRef}
           rowData={data}
-          rowHeight={52}
+          rowHeight={80}
           columnDefs={columnDefs}
           defaultColDef={defaultColDef}
           rowModelType="clientSide"
@@ -157,7 +157,7 @@ const EmployeeGrid = ({ data }) => {
           paginationPageSizeSelector={false}
           tooltipShowDelay={200}
           tooltipMouseTrack={true}
-          headerHeight={60}
+          headerHeight={80}
         />
       </div>
     </div>

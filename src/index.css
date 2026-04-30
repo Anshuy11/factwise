@@ -31,7 +31,7 @@ body {
 }
 /* Header container */
 .ag-theme-quartz .ag-header {
-  background-color: #e1e2e4; /* dark blue */
+  background-color: #e1e2e4; 
 }
 
 /* Header cells (padding + alignment) */
@@ -42,7 +42,7 @@ body {
   align-items: center;
 }
 
-/* Header text (white + no truncate) */
+/* Header text (no truncate) */
 .ag-theme-quartz .ag-header-cell-label {
   color: black ;
   font-weight: 600;
@@ -75,10 +75,3 @@ body {
 }
 
 
-
-/* Optional: dark mode support */
-@media (prefers-color-scheme: dark) {
-  .ag-theme-quartz-dark {
-    --ag-background-color: #1f2937;
-  }
-}
